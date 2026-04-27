@@ -1,0 +1,1 @@
+/* Faça um programa que leia um número e calcule seu fatorial. Mostrar o valor resultado */

@@ -1,0 +1,1 @@
+//Leia dois valores numéricos e escreva o menor valor.

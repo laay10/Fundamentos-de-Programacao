@@ -1,0 +1,1 @@
+// Faça um programa que escreve todos os números pares entre 1000 e 2000.

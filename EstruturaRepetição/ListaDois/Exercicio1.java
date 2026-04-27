@@ -1,0 +1,1 @@
+// Ler 10 valores inteiros e escrever apenas os valores que estão no intervalo [10, 20] .

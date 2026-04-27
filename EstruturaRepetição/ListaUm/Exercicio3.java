@@ -1,0 +1,1 @@
+//Faça um programa que leia um número e mostre todos os seus antecessores.
