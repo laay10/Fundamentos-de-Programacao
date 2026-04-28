@@ -3,15 +3,14 @@ import java.util.Scanner;
 
 public class Exercicio6 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner (System.in);
 
         int anoAtual = 2026;
 
-        System.out.println("Digite o ano em que você nasceu:");
+        System.out.println("Digite o ano que você nasceu:");
         int ano = input.nextInt();
 
         int idade = anoAtual - ano;
-
-        System.out.println("Esse ano o usuário fara " + idade + " anos");
+        System.out.println("O usuário fará esse ano: " + idade + " anos");
     }
 }
