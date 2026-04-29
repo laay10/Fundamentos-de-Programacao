@@ -5,3 +5,10 @@ Saldo                           Médio Crédito
 Maior ou igual a R601,00 40% do valor do saldo médio
 Maior ou igual a R401,00 30% do valor do saldo médio
 Maior ou igual a R201,00 20% do valor do saldo médio*/
+import java.util.Scanner;
+
+public class Exercicio7{
+    public static void main (String[] args){
+        
+    }
+}

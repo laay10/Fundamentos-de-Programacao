@@ -5,3 +5,10 @@ deve exibir ainda a quantidade de valores lidos.
 Por exemplo, se o usuário digitar os números 4 e 2, esses números pertencem ao intervalo [0; 25]. 
 Nos demais intervalos, [26; 50], [51; 75] e [76; 100], a resposta será zero, pois os números digitados pelo 
 usuário não fazem parte dos intervalos anteriores. */
+import java.util.Scanner;
+
+public class Exercicio8{
+    public static void main (String[] args){
+        
+    }
+}

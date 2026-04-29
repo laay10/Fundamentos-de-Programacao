@@ -2,3 +2,10 @@
 (a) a média dos valores;
 (b) o maior deles;
 (c) o menor deles. */
+import java.util.Scanner;
+
+public class Exercicio5{
+    public static void main (String[] args){
+        
+    }
+}

@@ -5,3 +5,10 @@ com a fórmula DISTANCIA = TEMPO * VELOCIDADE. Tendo o valor da distância, bast
 quantidade de litros de combustível utilizada na viagem com a fórmula: LITROS = DISTANCIA / 12. O 
 programa deverá apresentar os valores da velocidade média, tempo gasto na viagem, à distância 
 percorrida e a quantidade de litros utilizada na viagem. */
+import java.util.Scanner;
+
+public class Exercicio5{
+    public static void main (String[] args){
+        
+    }
+}

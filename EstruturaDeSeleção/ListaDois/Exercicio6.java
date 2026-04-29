@@ -7,3 +7,10 @@ que a soma dos outros dois lados.
 • Triângulo eqüilátero todos os lados são iguais.
 • Triângulo isóscele dois lados iguais e um diferente.
 • Triângulo escaleno todos os lados diferentes. */
+import java.util.Scanner;
+
+public class Exercicio6{
+    public static void main (String[] args){
+        
+    }
+}

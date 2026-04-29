@@ -8,3 +8,10 @@ Inicio do intervalo: 17
 Fim do intervalo: 29
 Números divisiveis por 3 no intervalo de 17 a 29 :
 18 21 24 27 */
+import java.util.Scanner;
+
+public class Exercicio2{
+    public static void main (String[] args){
+        
+    }
+}

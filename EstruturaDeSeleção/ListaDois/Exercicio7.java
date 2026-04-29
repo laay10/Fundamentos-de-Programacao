@@ -5,3 +5,10 @@ a característica citada.
 {30 + 25 = 55}
 55² = 3025
 Obs.: 55 ao quadrado resulta 3025 */
+import java.util.Scanner;
+
+public class Exercicio7{
+    public static void main (String[] args){
+        
+    }
+}
