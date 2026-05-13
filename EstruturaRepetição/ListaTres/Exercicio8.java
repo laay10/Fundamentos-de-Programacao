@@ -9,6 +9,34 @@ import java.util.Scanner;
 
 public class Exercicio8{
     public static void main (String[] args){
-        
+        Scanner input = new Scanner(System.in);
+        int countIntervalo1 = 0; // [0; 25]
+        int countIntervalo2 = 0; // [26; 50]
+        int countIntervalo3 = 0; // [51; 75]
+        int countIntervalo4 = 0; // [76; 100]
+        int totalValores = 0;
+        int numero;
+        do {
+            System.out.print("Digite um número (negativo para encerrar): ");
+            numero = input.nextInt();
+            if (numero >= 0) {
+                totalValores++;
+                if (numero <= 25) {
+                    countIntervalo1++;
+                } else if (numero <= 50) {
+                    countIntervalo2++;
+                } else if (numero <= 75) {
+                    countIntervalo3++;
+                } else if (numero <= 100) {
+                    countIntervalo4++;
+                }
+            }
+        } while (numero >= 0);
+        System.out.println("Quantidade de valores no intervalo [0; 25]: " + countIntervalo1);
+        System.out.println("Quantidade de valores no intervalo [26; 50]: " + countIntervalo2);
+        System.out.println("Quantidade de valores no intervalo [51; 75]: " + countIntervalo3);
+        System.out.println("Quantidade de valores no intervalo [76; 100]: " + countIntervalo4);
+        System.out.println("Quantidade total de valores lidos: " + totalValores);
+        input.close();
     }
 }

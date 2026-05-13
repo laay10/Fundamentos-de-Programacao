@@ -6,6 +6,23 @@ import java.util.Scanner;
 
 public class Exercicio4{
     public static void main (String[] args){
-        
+       Scanner input = new Scanner(System.in);
+       System.out.print("Digite o valor total da compra: ");
+       double valorCompra = input.nextDouble();
+       System.out.print("Digite a classificação do cliente (1, 2 ou 3): ");
+       int classificacao = input.nextInt();
+       double desconto = 0.0;
+       if (classificacao == 1) {
+           desconto = valorCompra * 0.20;
+       } else if (classificacao == 2) {
+           desconto = valorCompra * 0.15;
+       } else if (classificacao == 3) {
+           desconto = valorCompra * 0.05; 
+       }
+       double valorAPagar = valorCompra - desconto;
+       System.out.println("Valor da compra: " + valorCompra);
+       System.out.println("Desconto: " + desconto);
+       System.out.println("Valor a ser pago: " + valorAPagar);
+       input.close();
     }
 }

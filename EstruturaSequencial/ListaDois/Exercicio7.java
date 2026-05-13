@@ -9,6 +9,19 @@ import java.util.Scanner;
 
 public class Exercicio7{
     public static void main (String[] args){
-        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite o número de horas trabalhadas: ");
+        int horasTrabalhadas = input.nextInt();
+        System.out.print("Digite o número de dependentes: ");
+        int numeroDependentes = input.nextInt();
+        double salarioBruto = (horasTrabalhadas * 12) + (numeroDependentes * 40);
+        double descontoINSS = salarioBruto * 0.085;
+        double descontoIR = salarioBruto * 0.05;
+        double salarioLiquido = salarioBruto - descontoINSS - descontoIR;
+        System.out.println("Salário bruto: " + salarioBruto);
+        System.out.println("Desconto INSS: " + descontoINSS);
+        System.out.println("Desconto IR: " + descontoIR);
+        System.out.println("Salário líquido: " + salarioLiquido);
+        input.close();
     }
 }

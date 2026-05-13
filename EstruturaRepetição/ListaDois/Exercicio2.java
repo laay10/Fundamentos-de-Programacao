@@ -12,6 +12,19 @@ import java.util.Scanner;
 
 public class Exercicio2{
     public static void main (String[] args){
-        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Entre com o valor do divisor: ");
+        int divisor = input.nextInt();
+        System.out.print("Inicio do intervalo: ");
+        int inicio = input.nextInt();
+        System.out.print("Fim do intervalo: ");
+        int fim = input.nextInt();
+        System.out.println("Números divisíveis por " + divisor + " no intervalo de " + inicio + " a " + fim + ":");
+        for (int i = inicio; i <= fim; i++) {
+            if (i % divisor == 0) {
+                System.out.print(i + " ");
+            }
+        }
+        input.close();
     }
 }

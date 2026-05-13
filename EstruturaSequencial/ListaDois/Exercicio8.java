@@ -5,6 +5,15 @@ import java.util.Scanner;
 
 public class Exercicio8{
     public static void main (String[] args){
-        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite a quantidade de camisetas pequenas vendidas: ");
+        int quantidadePequenas = input.nextInt();
+        System.out.print("Digite a quantidade de camisetas médias vendidas: ");
+        int quantidadeMedias = input.nextInt();
+        System.out.print("Digite a quantidade de camisetas grandes vendidas: ");
+        int quantidadeGrandes = input.nextInt();
+        double valorTotal = (quantidadePequenas * 10) + (quantidadeMedias * 15) + (quantidadeGrandes * 18);
+        System.out.println("O valor total a ser cobrado é: " + valorTotal);
+        input.close();
     }
 }

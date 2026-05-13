@@ -23,3 +23,4 @@ public class Exercicio06 {
         return contador;
     }
 }
+// Refazer sem o uso de array

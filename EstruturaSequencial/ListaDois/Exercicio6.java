@@ -5,6 +5,13 @@ import java.util.Scanner;
 
 public class Exercicio6{
     public static void main (String[] args){
-        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite o preço de fábrica do automóvel: ");
+        double precoFabrica = input.nextDouble();
+        double impostos = precoFabrica * 0.45;
+        double percentualRevendedor = precoFabrica * 0.28;
+        double precoFinal = precoFabrica + impostos + percentualRevendedor;
+        System.out.println("O preço final do automóvel é: " + precoFinal);
+        input.close();
     }
 }

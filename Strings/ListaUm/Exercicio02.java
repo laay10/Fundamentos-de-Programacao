@@ -5,6 +5,20 @@ import java.util.Scanner;
 public class Exercicio02 {
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
+
+        System.out.print("Digite uma palavra: ");
+        String palavra = input.nextLine();
+        System.out.print("Digite um trecho de palavra: ");
+        String trecho = input.nextLine();
+
+        if (palavra.contains(trecho)) {
+            System.out.println("A palavra contém o trecho informado.");
+        } else {
+            System.out.println("A palavra não contém o trecho informado.");
+        }
+
+        input.close();
+        
     }
 }
 

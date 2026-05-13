@@ -1,14 +1,33 @@
 /* Faça um programa que receba uma data no formato dd/mm/aaaa e mostre com o mês por extenso. Por exemplo: 15/03/2023 -> 15 de março de 2023 */
 import java.util.Scanner;
+
 public class Exercicio05 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Digite uma data no formato dd/mm/aaaa: ");
         String data = input.nextLine();
-        String[] partes = data.split("/");
-        int dia = Integer.parseInt(partes[0]);
-        int mes = Integer.parseInt(partes[1]);
-        int ano = Integer.parseInt(partes[2]);
+        
+        // Encontrar as posições das barras
+        int primeiroSlash = data.indexOf('/');
+        if (primeiroSlash == -1) {
+            System.out.println("Formato inválido.");
+            return;
+        }
+        int segundoSlash = data.indexOf('/', primeiroSlash + 1);
+        if (segundoSlash == -1) {
+            System.out.println("Formato inválido.");
+            return;
+        }
+        
+        // Extrair dia, mês e ano sem usar array
+        String diaStr = data.substring(0, primeiroSlash);
+        String mesStr = data.substring(primeiroSlash + 1, segundoSlash);
+        String anoStr = data.substring(segundoSlash + 1);
+        
+        int dia = Integer.parseInt(diaStr);
+        int mes = Integer.parseInt(mesStr);
+        int ano = Integer.parseInt(anoStr);
+        
         String mesExtenso = "";
         switch (mes) {
             case 1: mesExtenso = "janeiro"; break;

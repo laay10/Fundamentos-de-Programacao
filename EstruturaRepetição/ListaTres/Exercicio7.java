@@ -4,6 +4,14 @@ import java.util.Scanner;
 
 public class Exercicio7{
     public static void main (String[] args){
-        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite um valor n para encontrar os quadrados perfeitos menores que n: ");
+        int n = input.nextInt();
+        System.out.println("Os quadrados perfeitos menores que " + n + " são:");
+        for (int i = 1; i * i < n; i++) {
+            int quadradoPerfeito = i * i;
+            System.out.println(quadradoPerfeito);
+        }
+        input.close();
     }
 }
